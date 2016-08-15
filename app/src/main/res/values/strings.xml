@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AndroidSummitSampleApp</string>
+
+    <!-- Nessie -->
+    <string name="nessie_customers">Get Customers</string>
+    <string name="nessie_deposit">Create Deposit</string>
+
+    <!-- Card.IO -->
+    <string name="launch_cardio_scanner">Launch Scanner</string>
 </resources>

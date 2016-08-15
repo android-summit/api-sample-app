@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global -->
+    <dimen name="default_padding">10dp</dimen>
+
+    <!-- Card.IO -->
+    <dimen name="cardio_margin_bottom">20dp</dimen>
+
+</resources>
