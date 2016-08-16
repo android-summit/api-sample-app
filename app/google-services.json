@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "737533494352",
+    "firebase_url": "https://androidsummitsampleapp-20e0e.firebaseio.com",
+    "project_id": "androidsummitsampleapp-20e0e",
+    "storage_bucket": "androidsummitsampleapp-20e0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737533494352:android:f47770b89e5ecc31",
+        "android_client_info": {
+          "package_name": "com.androidsummit.androidsummitsampleapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737533494352-bjk0l838jqqpu7et3jhq13gathnp69oj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAATsBMpe_-FNE_tn3A4SV7jWB4led-cRM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

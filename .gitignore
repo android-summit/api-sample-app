@@ -6,3 +6,6 @@
 /build
 /captures
 /gradle.properties
+
+# Firebase
+/app/google-services.json
