@@ -7,4 +7,10 @@
 
     <!-- Card.IO -->
     <string name="launch_cardio_scanner">Launch Scanner</string>
+
+    <!-- Firebase Auth -->
+    <string name="firebase_auth_sign_in">Sign In</string>
+    <string name="firebase_auth_sign_out">Sign Out</string>
+    <string name="signed_in_status">Signed In</string>
+    <string name="signed_out_status">Signed Out</string>
 </resources>

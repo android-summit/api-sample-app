@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    
+    <LinearLayout
+            android:id="@+id/auth_content"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/default_padding">
 
-</LinearLayout>
+        <Button
+                android:id="@+id/firebase_auth_sign_in_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/auth_status_text_size"
+                android:text="@string/firebase_auth_sign_in"
+                android:layout_margin="@dimen/auth_button_margin"/>
+
+        <Button
+                android:id="@+id/firebase_auth_sign_out_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/auth_status_text_size"
+                android:text="@string/firebase_auth_sign_out"
+                android:layout_margin="@dimen/auth_button_margin"/>
+
+        <TextView
+                android:id="@+id/auth_status_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/auth_status_text_size"
+                android:layout_margin="@dimen/auth_button_margin"
+                android:padding="@dimen/auth_status_textview_padding"/>
+
+        <TextView
+                android:id="@+id/user_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/auth_button_margin"
+                android:textSize="@dimen/auth_status_text_size"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+            android:id="@+id/auth_progres_bar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent=""
+            android:visibility="gone"/>
+
+</RelativeLayout>

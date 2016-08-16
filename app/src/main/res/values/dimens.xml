@@ -7,4 +7,10 @@
     <!-- Card.IO -->
     <dimen name="cardio_margin_bottom">20dp</dimen>
 
+    <!-- Firebase -->
+    <dimen name="auth_buttons_text_size">15sp</dimen>
+    <dimen name="auth_status_text_size">25sp</dimen>
+    <dimen name="auth_button_margin">15dp</dimen>
+    <dimen name="auth_status_textview_padding">5dp</dimen>
+
 </resources>
