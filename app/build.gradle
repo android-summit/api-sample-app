@@ -27,6 +27,15 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
 
+    /* ***** APIs ***** */
+
+    // Nessie
+    compile 'com.reimaginebanking.api:nessie-android-sdk:1.0.0'
+
+    // Card.IO
+    compile 'io.card:android-sdk:5.4.0'
+
+
     /* ***** FIREBASE ***** */
 
     // Firebase Core
@@ -40,15 +49,6 @@ dependencies {
 
     // Firebase Auth UI
     compile 'com.firebaseui:firebase-ui-auth:0.4.4'
-
-
-    /* ***** APIs ***** */
-
-    // Nessie
-    compile 'com.reimaginebanking.api:nessie-android-sdk:1.0.0'
-
-    // Card.IO
-    compile 'io.card:android-sdk:5.4.0'
 }
 
 apply plugin: 'com.google.gms.google-services'

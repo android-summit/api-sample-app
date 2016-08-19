@@ -23,25 +23,38 @@ public class ApiMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.api_menu);
 
+        // TODO: move this setup to an XML file...
+
         // Set up API Menu Items here
         apiMenuItemList = new ArrayList<>();
+
+        // Nessie
         ApiMenuItem nessieItem = new ApiMenuItem.Builder()
-            .title("Nessie")
+            .title(getString(R.string.nessie_title))
             .imageResource(R.mipmap.nessie_logo)
             .build();
         apiMenuItemList.add(nessieItem);
-        apiMenuItemList.add(nessieItem);
-        apiMenuItemList.add(nessieItem);
-        apiMenuItemList.add(nessieItem);
-        apiMenuItemList.add(nessieItem);
-        apiMenuItemList.add(nessieItem);
-        apiMenuItemList.add(nessieItem);
-        apiMenuItemList.add(nessieItem);
-        apiMenuItemList.add(nessieItem);
-        apiMenuItemList.add(nessieItem);
-        apiMenuItemList.add(nessieItem);
-        apiMenuItemList.add(nessieItem);
-        apiMenuItemList.add(nessieItem);
+
+        // Card.IO
+        ApiMenuItem cardioItem = new ApiMenuItem.Builder()
+            .title(getString(R.string.cardio_title))
+            .imageResource(R.mipmap.cardio)
+            .build();
+        apiMenuItemList.add(cardioItem);
+
+        // Firebase Auth
+        ApiMenuItem firebaseAuthItem = new ApiMenuItem.Builder()
+            .title(getString(R.string.firebase_authui_title))
+            .imageResource(R.mipmap.firebase)
+            .build();
+        apiMenuItemList.add(firebaseAuthItem);
+
+        // Firebase Messaging
+        ApiMenuItem firebaseMessagingItem = new ApiMenuItem.Builder()
+            .title(getString(R.string.firebase_messaging_title))
+            .imageResource(R.mipmap.firebase)
+            .build();
+        apiMenuItemList.add(firebaseMessagingItem);
 
         apiMenuGrid = (GridView) findViewById(R.id.api_menu_gridlayout);
         apiMenuGrid.setAdapter(new ApiMenuGridAdapter(this, apiMenuItemList));
