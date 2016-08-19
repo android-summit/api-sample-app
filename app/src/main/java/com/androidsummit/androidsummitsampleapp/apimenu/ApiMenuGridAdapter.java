@@ -1,6 +1,8 @@
 package com.androidsummit.androidsummitsampleapp.apimenu;
 
 import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +18,8 @@ import java.util.List;
  * An adapter that sets up items for the ApiMenuActivity's GridView.
  */
 public class ApiMenuGridAdapter extends BaseAdapter {
+
+    private static final String TAG = ApiMenuGridAdapter.class.getSimpleName();
 
     private Context mContext;
     private List<ApiMenuItem> mApiMenuItemList;
@@ -41,7 +45,7 @@ public class ApiMenuGridAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         View view;
@@ -58,6 +62,22 @@ public class ApiMenuGridAdapter extends BaseAdapter {
 
             ImageView apiImageTextView = (ImageView) view.findViewById(R.id.api_tile_image);
             apiImageTextView.setImageResource(mApiMenuItemList.get(position).getImageResource());
+
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    try {
+                        String className = mApiMenuItemList.get(position).getNavigationClass();
+                        if (className != null) {
+                            Intent intent = new Intent(mContext, Class.forName(mApiMenuItemList.get(position).getNavigationClass()));
+                            mContext.startActivity(intent);
+                        }
+                    } catch (ClassNotFoundException e) {
+                        Log.e(TAG, "Class for item not found.");
+                    }
+
+                }
+            });
         } else {
             view = (View) convertView;
         }

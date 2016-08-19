@@ -7,10 +7,12 @@ public class ApiMenuItem {
 
     private String mTitle;
     private int mImageResource;
+    private String mNavigationClass;
 
     public ApiMenuItem(Builder builder) {
         mTitle = builder.bTitle;
         mImageResource = builder.bImage;
+        mNavigationClass = builder.bNavigationClass;
     }
 
     public String getTitle() {
@@ -21,10 +23,15 @@ public class ApiMenuItem {
         return mImageResource;
     }
 
+    public String getNavigationClass() {
+        return mNavigationClass;
+    }
+
     public static class Builder {
 
         private String bTitle;
         private int bImage;
+        private String bNavigationClass;
 
         public Builder title(String title) {
             bTitle = title;
@@ -33,6 +40,11 @@ public class ApiMenuItem {
 
         public Builder imageResource(int imageResource) {
             bImage = imageResource;
+            return this;
+        }
+
+        public Builder navigationClass(String navigationClass) {
+            bNavigationClass = navigationClass;
             return this;
         }
 

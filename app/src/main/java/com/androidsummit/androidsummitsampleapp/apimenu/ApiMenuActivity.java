@@ -5,7 +5,10 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.GridView;
 
+import com.androidsummit.androidsummitsampleapp.CardIOSampleActivity;
+import com.androidsummit.androidsummitsampleapp.NessieActivity;
 import com.androidsummit.androidsummitsampleapp.R;
+import com.androidsummit.androidsummitsampleapp.firebase.ExampleAuthFirebaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +35,7 @@ public class ApiMenuActivity extends AppCompatActivity {
         ApiMenuItem nessieItem = new ApiMenuItem.Builder()
             .title(getString(R.string.nessie_title))
             .imageResource(R.mipmap.nessie_logo)
+            .navigationClass(NessieActivity.class.getName())
             .build();
         apiMenuItemList.add(nessieItem);
 
@@ -39,6 +43,7 @@ public class ApiMenuActivity extends AppCompatActivity {
         ApiMenuItem cardioItem = new ApiMenuItem.Builder()
             .title(getString(R.string.cardio_title))
             .imageResource(R.mipmap.cardio)
+            .navigationClass(CardIOSampleActivity.class.getName())
             .build();
         apiMenuItemList.add(cardioItem);
 
@@ -46,6 +51,7 @@ public class ApiMenuActivity extends AppCompatActivity {
         ApiMenuItem firebaseAuthItem = new ApiMenuItem.Builder()
             .title(getString(R.string.firebase_authui_title))
             .imageResource(R.mipmap.firebase)
+            .navigationClass(ExampleAuthFirebaseActivity.class.getName())
             .build();
         apiMenuItemList.add(firebaseAuthItem);
 

@@ -24,15 +24,23 @@
                  android:supportsRtl="true"
                  android:theme="@style/AppTheme">
 
-
-        <!-- ***** Card.IO Activities ***** -->
-
         <activity android:name=".apimenu.ApiMenuActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <!-- ***** Nessie Activity ***** -->
+
+        <activity android:name=".NessieActivity" />
+
+        <!-- *************************** -->
+
+        <!-- ***** Card.IO Activities ***** -->
+
+        <activity android:name=".CardIOSampleActivity" />
 
         <!-- Activities responsible for gathering payment info -->
         <activity android:name="io.card.payment.CardIOActivity" android:configChanges="keyboardHidden|orientation" />
@@ -51,6 +59,12 @@
         </service>
 
         <!-- ************************************* -->
+
+        <!-- ***** Firebase Auth UI ***** -->
+
+        <activity android:name=".firebase.ExampleAuthFirebaseActivity" />
+
+        <!-- **************************** -->
 
     </application>
 
