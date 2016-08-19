@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">AndroidSummitSampleApp</string>
 
+    <!-- API Menu Item Titles -->
+    <string name="nessie_title">Nessie</string>
+    <string name="cardio_title">Card.IO</string>
+    <string name="firebase_messaging_title">Firebase Messaging</string>
+    <string name="firebase_authui_title">Firebase Auth UI</string>
+
     <!-- Nessie -->
     <string name="nessie_customers">Get Customers</string>
     <string name="nessie_deposit">Create Deposit</string>

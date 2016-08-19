@@ -4,6 +4,10 @@
     <!-- Global -->
     <dimen name="default_padding">10dp</dimen>
 
+    <!-- Grid View Item -->
+    <dimen name="api_tile_dimen">50dp</dimen>
+    <dimen name="api_title_textsize">15sp</dimen>
+
     <!-- Card.IO -->
     <dimen name="cardio_margin_bottom">20dp</dimen>
 

@@ -11,7 +11,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-
+        // Load any API keys from gradle.properties
         buildConfigField("String", "NESSIE_API_KEY", NESSIE_API_KEY)
     }
     buildTypes {
@@ -27,9 +27,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
 
-    compile 'com.reimaginebanking.api:nessie-android-sdk:1.0.0'
-    // Card.IO
-    compile 'io.card:android-sdk:5.4.0'
+    /* ***** FIREBASE ***** */
 
     // Firebase Core
     compile 'com.google.firebase:firebase-core:9.4.0'
@@ -37,9 +35,20 @@ dependencies {
     // Firebase Messaging
     compile 'com.google.firebase:firebase-messaging:9.4.0'
 
-    // Firebase Auth UI
+    // Firebase Auth
     compile 'com.google.firebase:firebase-auth:9.4.0'
+
+    // Firebase Auth UI
     compile 'com.firebaseui:firebase-ui-auth:0.4.4'
+
+
+    /* ***** APIs ***** */
+
+    // Nessie
+    compile 'com.reimaginebanking.api:nessie-android-sdk:1.0.0'
+
+    // Card.IO
+    compile 'io.card:android-sdk:5.4.0'
 }
 
 apply plugin: 'com.google.gms.google-services'
