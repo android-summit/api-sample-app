@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="@dimen/default_padding">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/default_padding"
+            android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/first_name_label_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/field_label_textsize"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:text="@string/customer_first_name"/>
+
+            <TextView
+                    android:id="@+id/first_name_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/field_label_textsize"
+                    android:textColor="@android:color/white"
+                    android:text="@string/customer_first_name"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/last_name_label_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/field_label_textsize"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:text="@string/customer_last_name"/>
+
+            <TextView
+                    android:id="@+id/last_name_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/field_label_textsize"
+                    android:textColor="@android:color/white"
+                    android:text="@string/customer_last_name"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.GridView;
 
 import com.androidsummit.androidsummitsampleapp.CardIOSampleActivity;
-import com.androidsummit.androidsummitsampleapp.NessieActivity;
+import com.androidsummit.androidsummitsampleapp.nessie.NessieActivity;
 import com.androidsummit.androidsummitsampleapp.R;
 import com.androidsummit.androidsummitsampleapp.firebase.ExampleAuthFirebaseActivity;
 
@@ -24,7 +24,7 @@ public class ApiMenuActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.api_menu);
+        setContentView(R.layout.api_menu_activity);
 
         // TODO: move this setup to an XML file...
 

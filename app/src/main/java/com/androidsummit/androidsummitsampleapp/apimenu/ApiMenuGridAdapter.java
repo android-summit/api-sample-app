@@ -54,7 +54,7 @@ public class ApiMenuGridAdapter extends BaseAdapter {
 
             // inflate the grid view
             view = new View(mContext);
-            view = inflater.inflate(R.layout.gridview_item, null);
+            view = inflater.inflate(R.layout.api_menu_grid_item, null);
 
             // populate the gridview
             TextView apiTitleTextView = (TextView) view.findViewById(R.id.api_tile_title);

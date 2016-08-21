@@ -3,6 +3,7 @@
 
     <!-- Global -->
     <dimen name="default_padding">10dp</dimen>
+    <dimen name="default_margin">10dp</dimen>
 
     <!-- Grid View Item -->
     <dimen name="api_tile_dimen">50dp</dimen>
@@ -17,4 +18,10 @@
     <dimen name="auth_button_margin">15dp</dimen>
     <dimen name="auth_status_textview_padding">5dp</dimen>
 
+    <!-- Nessie -->
+    <dimen name="field_label_textsize">20sp</dimen>
+    <dimen name="customer_listview_height">300dp</dimen>
+    <dimen name="nessie_heading_size">25sp</dimen>
+    <dimen name="nessie_result_size">15sp</dimen>
+    
 </resources>

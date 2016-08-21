@@ -10,6 +10,18 @@
     <!-- Nessie -->
     <string name="nessie_customers">Get Customers</string>
     <string name="nessie_deposit">Create Deposit</string>
+    <string name="customer_first_name">"First Name: "</string>
+    <string name="customer_last_name">"Last Name: "</string>
+    <string name="nessie_customers_header">Retrieve a List of Customers</string>
+    <string name="amount_hint">Enter Amount...</string>
+    <string name="description_hint">Enter Description...</string>
+    <string name="medium_hint">Enter Medium...</string>
+
+    <string-array name="medium_spinner_options">
+        <item>Select Medium...</item>
+        <item>balance</item>
+        <item>rewards</item>
+    </string-array>
 
     <!-- Card.IO -->
     <string name="launch_cardio_scanner">Launch Scanner</string>

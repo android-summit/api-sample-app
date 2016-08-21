@@ -7,4 +7,7 @@
     <!-- Firebase Auth -->
     <color name="signed_in">#3B5323</color>
     <color name="signed_out">#7f0000</color>
+
+    <!-- Nessie -->
+    <color name="nessie_light_green">#CCFFCC</color>
 </resources>
