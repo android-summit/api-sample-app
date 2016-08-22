@@ -5,11 +5,12 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.GridView;
 
-import com.androidsummit.androidsummitsampleapp.CardIOSampleActivity;
-import com.androidsummit.androidsummitsampleapp.firebase.ExampleFirebaseMessagingActivity;
+import com.androidsummit.androidsummitsampleapp.cardio.CardIOSampleActivity;
+import com.androidsummit.androidsummitsampleapp.firebase.FirebaseDatabaseActivity;
+import com.androidsummit.androidsummitsampleapp.firebase.FirebaseMessagingActivity;
 import com.androidsummit.androidsummitsampleapp.nessie.NessieActivity;
 import com.androidsummit.androidsummitsampleapp.R;
-import com.androidsummit.androidsummitsampleapp.firebase.ExampleAuthFirebaseActivity;
+import com.androidsummit.androidsummitsampleapp.firebase.FirebaseAuthActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,7 +53,7 @@ public class ApiMenuActivity extends AppCompatActivity {
         ApiMenuItem firebaseAuthItem = new ApiMenuItem.Builder()
             .title(getString(R.string.firebase_authui_title))
             .imageResource(R.mipmap.firebase)
-            .navigationClass(ExampleAuthFirebaseActivity.class.getName())
+            .navigationClass(FirebaseAuthActivity.class.getName())
             .build();
         apiMenuItemList.add(firebaseAuthItem);
 
@@ -60,9 +61,17 @@ public class ApiMenuActivity extends AppCompatActivity {
         ApiMenuItem firebaseMessagingItem = new ApiMenuItem.Builder()
             .title(getString(R.string.firebase_messaging_title))
             .imageResource(R.mipmap.firebase)
-            .navigationClass(ExampleFirebaseMessagingActivity.class.getName())
+            .navigationClass(FirebaseMessagingActivity.class.getName())
             .build();
         apiMenuItemList.add(firebaseMessagingItem);
+
+        // Firebase Database
+        ApiMenuItem firebaseDatabaseItem = new ApiMenuItem.Builder()
+            .title(getString(R.string.firebase_database_title))
+            .imageResource(R.mipmap.firebase)
+            .navigationClass(FirebaseDatabaseActivity.class.getName())
+            .build();
+        apiMenuItemList.add(firebaseDatabaseItem);
 
         apiMenuGrid = (GridView) findViewById(R.id.api_menu_gridlayout);
         apiMenuGrid.setAdapter(new ApiMenuGridAdapter(this, apiMenuItemList));

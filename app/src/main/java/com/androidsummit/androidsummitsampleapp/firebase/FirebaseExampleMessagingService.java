@@ -15,9 +15,9 @@ import com.androidsummit.androidsummitsampleapp.R;
  *
  * Notification Setup Instructions: https://firebase.google.com/docs/notifications/android/console-audience
  */
-public class ExampleMessagingService extends FirebaseMessagingService {
+public class FirebaseExampleMessagingService extends FirebaseMessagingService {
 
-    private static final String TAG = ExampleMessagingService.class.getSimpleName();
+    private static final String TAG = FirebaseExampleMessagingService.class.getSimpleName();
 
     /*
     Build a custom notification here.  This method gets called when the app is in the foreground and a notification is sent.  If the app

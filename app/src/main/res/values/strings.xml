@@ -6,6 +6,7 @@
     <string name="cardio_title">Card.IO</string>
     <string name="firebase_messaging_title">Firebase Messaging</string>
     <string name="firebase_authui_title">Firebase Auth UI</string>
+    <string name="firebase_database_title">Firebase Database</string>
 
     <!-- Nessie -->
     <string name="nessie_customers">Get Customers</string>
@@ -52,4 +53,10 @@
             If you still cannot receive messages, make sure you have the latest Google Play Services and Google Repository SDKs.
         </p>]]>
     </string>
+
+    <!-- Firebase Database -->
+    <string name="first_name_hint">Enter First Name...</string>
+    <string name="last_name_hint">Enter Last Name...</string>
+    <string name="firebase_save_customer">Save Customer</string>
+
 </resources>

@@ -42,7 +42,7 @@
 
         <!-- ***** Card.IO Activities ***** -->
 
-        <activity android:name=".CardIOSampleActivity" />
+        <activity android:name=".cardio.CardIOSampleActivity" />
 
         <!-- Activities responsible for gathering payment info -->
         <activity android:name="io.card.payment.CardIOActivity" android:configChanges="keyboardHidden|orientation" />
@@ -54,21 +54,27 @@
         <!-- ***** Firebase Messaging Service ***** -->
 
         <service
-                android:name=".firebase.ExampleMessagingService">
+                android:name=".firebase.FirebaseExampleMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
 
-        <activity android:name=".firebase.ExampleFirebaseMessagingActivity"/>
+        <activity android:name=".firebase.FirebaseMessagingActivity"/>
 
         <!-- ************************************* -->
 
         <!-- ***** Firebase Auth UI ***** -->
 
-        <activity android:name=".firebase.ExampleAuthFirebaseActivity" />
+        <activity android:name=".firebase.FirebaseAuthActivity" />
 
         <!-- **************************** -->
+
+        <!-- ***** Firebase Database ***** -->
+
+        <activity android:name=".firebase.FirebaseDatabaseActivity" />
+
+        <!-- ***************************** -->
 
     </application>
 

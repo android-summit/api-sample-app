@@ -27,7 +27,7 @@ import com.firebase.ui.auth.AuthUI;
  * Firebase Auth: https://firebase.google.com/docs/auth/
  * Currently Signed In User: https://firebase.google.com/docs/auth/android/manage-users#get_the_currently_signed-in_user
  */
-public class ExampleAuthFirebaseActivity extends AppCompatActivity {
+public class FirebaseAuthActivity extends AppCompatActivity {
 
     private static final int RC_SIGN_IN = 200;
 

@@ -1,4 +1,4 @@
-package com.androidsummit.androidsummitsampleapp;
+package com.androidsummit.androidsummitsampleapp.cardio;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.androidsummit.androidsummitsampleapp.R;
 
 import io.card.payment.CardIOActivity;
 import io.card.payment.CreditCard;

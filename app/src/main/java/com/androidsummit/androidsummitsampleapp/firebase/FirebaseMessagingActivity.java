@@ -12,7 +12,7 @@ import com.androidsummit.androidsummitsampleapp.R;
 /**
  * An activity which gives instructions on how to send a notification to the app using Firebase.
  */
-public class ExampleFirebaseMessagingActivity extends AppCompatActivity {
+public class FirebaseMessagingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
