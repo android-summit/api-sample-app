@@ -59,7 +59,7 @@ Android Getting Started Guide - https://firebase.google.com/docs/android/setup
 
 See the individual instructions below for each Firebase module.  The dependencies are already included in the module-level build.gradle file. A gradle sync should pull down everything you need.  
 
-**Notifications**  
+#### Notifications  
 
 Notifications - https://firebase.google.com/docs/notifications/  
 
@@ -68,7 +68,7 @@ No additional setup necessary for Notifications.  Just head over to the Firebase
 * `FirebaseMessagingActivity` - An instructional page which explains how to send a message to the app.  
 * `FirebaseExampleMessagingService` - A service which intercepts and handles notifications when they are sent while the app is in the foreground.  
 
-**Authentication**  
+#### Authentication  
 
 Firebase Auth - https://firebase.google.com/docs/auth/android/google-signin 
 Auth UI - https://firebase.google.com/docs/auth/ 
@@ -81,7 +81,7 @@ Additional Setup:
 
 * `FirebaseAuthActivity` - Demonstrates sign in/sign out with the Google authentication provider.  
 
-**Realtime Database**  
+#### Realtime Database  
 
 Realtime Database - https://firebase.google.com/docs/database/  
 
