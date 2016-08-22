@@ -83,6 +83,9 @@ public class NessieCreateDepositActivity extends AppCompatActivity {
         });
     }
 
+    /*
+    The POST request which calls the API to create the deposit
+     */
     private void createDeposit(String accountId) {
         Deposit deposit = buildDeposit();
 
@@ -101,6 +104,9 @@ public class NessieCreateDepositActivity extends AppCompatActivity {
         });
     }
 
+    /*
+    Helper method to build and return a deposit object (which will be sent to the API for creation)
+     */
     private Deposit buildDeposit() {
         Integer amount;
         try {

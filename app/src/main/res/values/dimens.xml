@@ -17,6 +17,7 @@
     <dimen name="auth_status_text_size">25sp</dimen>
     <dimen name="auth_button_margin">15dp</dimen>
     <dimen name="auth_status_textview_padding">5dp</dimen>
+    <dimen name="messaging_instructions_textsize">18sp</dimen>
 
     <!-- Nessie -->
     <dimen name="field_label_textsize">20sp</dimen>

@@ -31,4 +31,25 @@
     <string name="firebase_auth_sign_out">Sign Out</string>
     <string name="signed_in_status">Signed In</string>
     <string name="signed_out_status">Signed Out</string>
+
+    <!-- Firebase Messaging -->
+    <string name="messaging_setup_instructions"><![CDATA[
+        <h3>
+            To send Firebase Messaging notifications to this app:
+        </h3>
+        <p>
+            1. Add this sample app to your account on <a href=\"http://firebase.google.com\">firebase.google.com</a>
+        </p>
+        <p>
+            2. Generate google-services.json file and add it to this sample app.  Instructions on setup can be found
+            <a href=\"https://firebase.google.com/docs/android/setup\">here</a>.
+        </p>
+        <p>
+            3. Send a notification to the app using the Firebase console.  This app is already setup to handle background and foreground
+            notifications. See ExampleMessagingService in this app for foreground notification handling.
+        </p>
+        <p>
+            If you still cannot receive messages, make sure you have the latest Google Play Services and Google Repository SDKs.
+        </p>]]>
+    </string>
 </resources>

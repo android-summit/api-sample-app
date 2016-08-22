@@ -42,7 +42,7 @@ public class ExampleAuthFirebaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.example_auth_firebase_activity);
+        setContentView(R.layout.firebase_example_auth_activity);
 
         Button signInBtn = (Button) findViewById(R.id.firebase_auth_sign_in_btn);
         signInBtn.setOnClickListener(new View.OnClickListener() {

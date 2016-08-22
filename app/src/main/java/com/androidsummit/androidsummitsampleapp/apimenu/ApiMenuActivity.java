@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.GridView;
 
 import com.androidsummit.androidsummitsampleapp.CardIOSampleActivity;
+import com.androidsummit.androidsummitsampleapp.firebase.ExampleFirebaseMessagingActivity;
 import com.androidsummit.androidsummitsampleapp.nessie.NessieActivity;
 import com.androidsummit.androidsummitsampleapp.R;
 import com.androidsummit.androidsummitsampleapp.firebase.ExampleAuthFirebaseActivity;
@@ -59,6 +60,7 @@ public class ApiMenuActivity extends AppCompatActivity {
         ApiMenuItem firebaseMessagingItem = new ApiMenuItem.Builder()
             .title(getString(R.string.firebase_messaging_title))
             .imageResource(R.mipmap.firebase)
+            .navigationClass(ExampleFirebaseMessagingActivity.class.getName())
             .build();
         apiMenuItemList.add(firebaseMessagingItem);
 

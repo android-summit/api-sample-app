@@ -60,6 +60,8 @@
             </intent-filter>
         </service>
 
+        <activity android:name=".firebase.ExampleFirebaseMessagingActivity"/>
+
         <!-- ************************************* -->
 
         <!-- ***** Firebase Auth UI ***** -->
