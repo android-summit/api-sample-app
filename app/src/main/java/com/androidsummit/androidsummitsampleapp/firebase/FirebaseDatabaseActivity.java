@@ -18,6 +18,7 @@ import android.widget.ListView;
 import com.androidsummit.androidsummitsampleapp.R;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -80,12 +81,19 @@ public class FirebaseDatabaseActivity extends AppCompatActivity {
 
             @Override
             public void onChildRemoved(DataSnapshot dataSnapshot) {
+                // try deleting an entry in the Firebase Console, and watch the sample app update in real time!
+
                 String key = dataSnapshot.getKey();
-                for (FirebaseCustomer customer : mCustomers) {
+                Iterator<FirebaseCustomer> iter = mCustomers.iterator();
+
+                while (iter.hasNext()) {
+                    FirebaseCustomer customer = iter.next();
+
                     if (customer.getId().equals(key)) {
-                        mCustomers.remove(customer);
+                        iter.remove();
                         ((BaseAdapter) customersListView.getAdapter()).notifyDataSetChanged();
                     }
+
                 }
             }
 
