@@ -1,4 +1,4 @@
-package com.androidsummit.androidsummitsampleapp.firebase;
+package com.androidsummit.androidsummitsampleapp.firebase.messaging;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

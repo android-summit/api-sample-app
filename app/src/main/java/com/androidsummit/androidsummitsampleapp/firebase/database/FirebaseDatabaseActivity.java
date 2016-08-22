@@ -1,4 +1,4 @@
-package com.androidsummit.androidsummitsampleapp.firebase;
+package com.androidsummit.androidsummitsampleapp.firebase.database;
 
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -16,6 +16,8 @@ import android.widget.EditText;
 import android.widget.ListView;
 
 import com.androidsummit.androidsummitsampleapp.R;
+import com.androidsummit.androidsummitsampleapp.firebase.database.FirebaseCustomer;
+import com.androidsummit.androidsummitsampleapp.firebase.database.FirebaseCustomerListAdapter;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -25,7 +27,8 @@ import java.util.List;
  * This activity demonstrates an example of storing and retrieving data with the Firebase Realtime Database API. This example creates
  * customers with just simple first_name and last_name fields and stores them in the databse under a 'cutomers' reference.
  *
- * This example also listens for changes in the 'customers' database, and updates the list of customers when there is a change.
+ * This example also listens for changes in the 'customers' database, and updates the list of customers when there is a change (such as a
+ * customer being deleted).
  *
  * Configuration & Setup: https://firebase.google.com/docs/database/android/start/
  */
@@ -86,6 +89,7 @@ public class FirebaseDatabaseActivity extends AppCompatActivity {
                 String key = dataSnapshot.getKey();
                 Iterator<FirebaseCustomer> iter = mCustomers.iterator();
 
+                // iterate through the list and remove whatever FirebaseCustomer was deleted
                 while (iter.hasNext()) {
                     FirebaseCustomer customer = iter.next();
 

@@ -1,9 +1,9 @@
-package com.androidsummit.androidsummitsampleapp.firebase;
+package com.androidsummit.androidsummitsampleapp.firebase.database;
 
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Created by Mike Ferraco (tld509) on 8/22/16.
+ * A simple customer with an id, first name, and last name used to demonstrate Firebase Database fucntionality.
  */
 public class FirebaseCustomer {
 

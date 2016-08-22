@@ -1,4 +1,4 @@
-package com.androidsummit.androidsummitsampleapp.firebase;
+package com.androidsummit.androidsummitsampleapp.firebase.database;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,12 +8,11 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.androidsummit.androidsummitsampleapp.R;
-import com.androidsummit.androidsummitsampleapp.nessie.NessieActivity;
 
 import java.util.List;
 
 /**
- * An adapter to display the results from the GET customers call in {@link NessieActivity}.
+ * An adapter to display the list of FirebaseCustomers retrieved from the Firebase Database in {@link FirebaseDatabaseActivity}.
  */
 public class FirebaseCustomerListAdapter extends ArrayAdapter<FirebaseCustomer> {
 

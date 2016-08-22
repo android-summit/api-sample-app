@@ -1,4 +1,4 @@
-package com.androidsummit.androidsummitsampleapp.firebase;
+package com.androidsummit.androidsummitsampleapp.firebase.auth;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;

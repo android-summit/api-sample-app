@@ -6,11 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.GridView;
 
 import com.androidsummit.androidsummitsampleapp.cardio.CardIOSampleActivity;
-import com.androidsummit.androidsummitsampleapp.firebase.FirebaseDatabaseActivity;
-import com.androidsummit.androidsummitsampleapp.firebase.FirebaseMessagingActivity;
+import com.androidsummit.androidsummitsampleapp.firebase.database.FirebaseDatabaseActivity;
+import com.androidsummit.androidsummitsampleapp.firebase.messaging.FirebaseMessagingActivity;
 import com.androidsummit.androidsummitsampleapp.nessie.NessieActivity;
 import com.androidsummit.androidsummitsampleapp.R;
-import com.androidsummit.androidsummitsampleapp.firebase.FirebaseAuthActivity;
+import com.androidsummit.androidsummitsampleapp.firebase.auth.FirebaseAuthActivity;
 
 import java.util.ArrayList;
 import java.util.List;

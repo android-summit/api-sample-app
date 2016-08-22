@@ -54,25 +54,25 @@
         <!-- ***** Firebase Messaging Service ***** -->
 
         <service
-                android:name=".firebase.FirebaseExampleMessagingService">
+                android:name=".firebase.messaging.FirebaseExampleMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
 
-        <activity android:name=".firebase.FirebaseMessagingActivity"/>
+        <activity android:name=".firebase.messaging.FirebaseMessagingActivity"/>
 
         <!-- ************************************* -->
 
         <!-- ***** Firebase Auth UI ***** -->
 
-        <activity android:name=".firebase.FirebaseAuthActivity" />
+        <activity android:name=".firebase.auth.FirebaseAuthActivity" />
 
         <!-- **************************** -->
 
         <!-- ***** Firebase Database ***** -->
 
-        <activity android:name=".firebase.FirebaseDatabaseActivity" />
+        <activity android:name=".firebase.database.FirebaseDatabaseActivity" />
 
         <!-- ***************************** -->
 
