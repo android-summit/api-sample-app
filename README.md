@@ -28,8 +28,8 @@ Note: Make sure you have the latest Google Play Services and Google Repository S
 
 The Nessie API provides a virtual bank backend for use in your app.  
 
-API Documentation - http://api.reimaginebanking.com/documentation  
-Android SDK - https://github.com/nessieisreal/nessie-android-sdk  
+API Documentation: http://api.reimaginebanking.com/documentation  
+Android SDK: https://github.com/nessieisreal/nessie-android-sdk  
 
 For the Nessie API to work in the sample app:
 
@@ -48,8 +48,8 @@ Firebase provides a host of different services for your Android app.  This sampl
 * Authentication w/ Google & associated Auth UI
 * Realtime Databas  
 
-Firebase - https://firebase.google.com/  
-Android Getting Started Guide - https://firebase.google.com/docs/android/setup  
+Firebase: https://firebase.google.com/  
+Android Getting Started Guide: https://firebase.google.com/docs/android/setup  
 
 **To get Firebase working in the sample app:**  
 
@@ -61,7 +61,7 @@ See the individual instructions below for each Firebase module.  The dependencie
 
 #### Notifications  
 
-Notifications - https://firebase.google.com/docs/notifications/  
+Notifications: https://firebase.google.com/docs/notifications/  
 
 No additional setup necessary for Notifications.  Just head over to the Firebase console and try sending one to your app!
 
@@ -70,8 +70,8 @@ No additional setup necessary for Notifications.  Just head over to the Firebase
 
 #### Authentication  
 
-Firebase Auth - https://firebase.google.com/docs/auth/android/google-signin 
-Auth UI - https://firebase.google.com/docs/auth/ 
+Firebase Auth: https://firebase.google.com/docs/auth/android/google-signin 
+Auth UI: https://firebase.google.com/docs/auth/ 
 
 Additional Setup:  
 
@@ -83,7 +83,7 @@ Additional Setup:
 
 #### Realtime Database  
 
-Realtime Database - https://firebase.google.com/docs/database/  
+Realtime Database: https://firebase.google.com/docs/database/  
 
 Additional Setup:  
 
@@ -106,3 +106,5 @@ To do this, go to "Database" tab on the Firebase console for your app.  Change t
 ### Card.IO  
 
 The Card.IO provides an API for scanning a credit card with an Android camera and pulling the details from it.  There is no special setup necessary to get the Card.IO API working in the app.  Just build the app onto your device and try it out!
+
+Card.IO Instructions & Source Code: https://github.com/card-io/card.io-Android-SDK
