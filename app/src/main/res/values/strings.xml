@@ -30,8 +30,9 @@
     <!-- Firebase Auth -->
     <string name="firebase_auth_sign_in">Sign In</string>
     <string name="firebase_auth_sign_out">Sign Out</string>
-    <string name="signed_in_status">Signed In</string>
-    <string name="signed_out_status">Signed Out</string>
+    <string name="signed_in_status">Signed in as:</string>
+    <string name="signed_out_status">Signed out.</string>
+    <string name="auth_placeholder">-----</string>
 
     <!-- Firebase Messaging -->
     <string name="messaging_setup_instructions"><![CDATA[

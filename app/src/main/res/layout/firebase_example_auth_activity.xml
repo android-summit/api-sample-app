@@ -12,31 +12,35 @@
 
         <Button
                 android:id="@+id/firebase_auth_sign_in_btn"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:textSize="@dimen/auth_status_text_size"
                 android:text="@string/firebase_auth_sign_in"
-                android:layout_margin="@dimen/auth_button_margin"/>
+                android:layout_margin="@dimen/auth_button_margin"
+                android:background="@color/signed_in"
+                android:textColor="@android:color/white"/>
 
         <Button
                 android:id="@+id/firebase_auth_sign_out_btn"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:textSize="@dimen/auth_status_text_size"
                 android:text="@string/firebase_auth_sign_out"
-                android:layout_margin="@dimen/auth_button_margin"/>
+                android:layout_margin="@dimen/auth_button_margin"
+                android:background="@color/signed_out"
+                android:textColor="@android:color/white"/>
 
         <TextView
                 android:id="@+id/auth_status_textview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/white"
                 android:textSize="@dimen/auth_status_text_size"
                 android:layout_margin="@dimen/auth_button_margin"
-                android:padding="@dimen/auth_status_textview_padding"/>
+                android:padding="@dimen/auth_status_textview_padding"
+                android:text="@string/signed_out_status"/>
 
         <TextView
                 android:id="@+id/user_name_text_view"
@@ -44,7 +48,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="@dimen/auth_button_margin"
-                android:textSize="@dimen/auth_status_text_size"/>
+                android:textSize="@dimen/auth_status_text_size"
+                android:text="@string/auth_placeholder"/>
 
     </LinearLayout>
 

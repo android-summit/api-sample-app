@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -39,20 +38,30 @@ public class FirebaseAuthActivity extends AppCompatActivity {
 
     private ProgressBar authProgressBar;
 
+    private Button signOutBtn;
+
+    private Button signInBtn;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.firebase_example_auth_activity);
 
-        Button signInBtn = (Button) findViewById(R.id.firebase_auth_sign_in_btn);
+        // get references to all the views
+        signInBtn = (Button) findViewById(R.id.firebase_auth_sign_in_btn);
+        signOutBtn = (Button) findViewById(R.id.firebase_auth_sign_out_btn);
+        userNameTextView = (TextView) findViewById(R.id.user_name_text_view);
+        authContent = (LinearLayout) findViewById(R.id.auth_content);
+        authProgressBar = (ProgressBar) findViewById(R.id.auth_progres_bar);
+        authStatusTextView = (TextView) findViewById(R.id.auth_status_textview);
+
+        // set click listeners on the sign in/sign out buttons
         signInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 signInUser();
             }
         });
-
-        Button signOutBtn = (Button) findViewById(R.id.firebase_auth_sign_out_btn);
         signOutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,17 +69,8 @@ public class FirebaseAuthActivity extends AppCompatActivity {
             }
         });
 
-        userNameTextView = (TextView) findViewById(R.id.user_name_text_view);
-        authContent = (LinearLayout) findViewById(R.id.auth_content);
-        authProgressBar = (ProgressBar) findViewById(R.id.auth_progres_bar);
-
-        authStatusTextView = (TextView) findViewById(R.id.auth_status_textview);
-        FirebaseAuth auth = FirebaseAuth.getInstance();
-        if (auth.getCurrentUser() != null) {
-            setTextSignedIn(true);
-        } else {
-            setTextSignedIn(false);
-        }
+        // initial set up of the views and their statuses depending on signed in vs. signed out status of the user
+        setUserInfo();
     }
 
     // signs the user in using Firebase Auth - Google Provider
@@ -89,13 +89,13 @@ public class FirebaseAuthActivity extends AppCompatActivity {
         showProgressBar(true);
         AuthUI.getInstance()
             .signOut(this)
-        .addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                showProgressBar(false);
-                setTextSignedIn(false);
-            }
-        });
+            .addOnCompleteListener(new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull Task<Void> task) {
+                    showProgressBar(false);
+                    setUserInfo();
+                }
+            });
     }
 
     @Override
@@ -104,34 +104,45 @@ public class FirebaseAuthActivity extends AppCompatActivity {
         if (requestCode == RC_SIGN_IN) {
             showProgressBar(false);
             if (resultCode == RESULT_OK) {
-                setTextSignedIn(true);
+                setUserInfo();
             } else {
                 // handle failed sign in here...
             }
         }
     }
 
+    /*
+    Updates the information on the page based on whether the user is signed in or not
+     */
+    private void setUserInfo() {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            signOutBtn.setEnabled(true);
+            signInBtn.setEnabled(false);
+            setTextSignedIn(true);
+            userNameTextView.setText(user.getDisplayName());
+        } else {
+            signOutBtn.setEnabled(false);
+            signInBtn.setEnabled(true);
+            setTextSignedIn(false);
+            userNameTextView.setText(getString(R.string.auth_placeholder));
+        }
+    }
+
+    /*
+    Updates the signed in status text on the view depending on whether the user is signed in or not
+     */
     private void setTextSignedIn(boolean signedIn) {
         if (signedIn) {
             authStatusTextView.setText(R.string.signed_in_status);
-            authStatusTextView.setBackgroundColor(ContextCompat.getColor(this, R.color.signed_in));
-            setUsernameText();
         } else {
             authStatusTextView.setText(R.string.signed_out_status);
-            authStatusTextView.setBackgroundColor(ContextCompat.getColor(this, R.color.signed_out));
-            setUsernameText();
         }
     }
 
-    private void setUsernameText() {
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        if (user != null) {
-            userNameTextView.setText(user.getDisplayName());
-        } else {
-            userNameTextView.setText("");
-        }
-    }
-
+    /*
+    Shows or hides the progress bar depending on the boolean value of the 'show' parameter
+     */
     private void showProgressBar(boolean show) {
         if (show) {
             authContent.setVisibility(View.GONE);
