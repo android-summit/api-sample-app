@@ -50,7 +50,7 @@ public class ApiMenuGridAdapter extends BaseAdapter {
 
         View view;
 
-        if (convertView == null) {
+        //if (convertView == null) {
 
             // inflate the grid view
             view = new View(mContext);
@@ -78,9 +78,9 @@ public class ApiMenuGridAdapter extends BaseAdapter {
 
                 }
             });
-        } else {
-            view = (View) convertView;
-        }
+        /*} else {
+            view = convertView;
+        }*/
 
         return view;
     }

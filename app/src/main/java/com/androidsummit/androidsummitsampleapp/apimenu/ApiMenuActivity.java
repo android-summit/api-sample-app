@@ -28,7 +28,7 @@ public class ApiMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.api_menu_activity);
 
-        // TODO: move this setup to an XML file...
+        // TODO: move this setup somewhere else
 
         // Set up API Menu Items here
         apiMenuItemList = new ArrayList<>();

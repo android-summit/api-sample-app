@@ -30,7 +30,7 @@ dependencies {
     /* ***** APIs ***** */
 
     // Nessie
-    compile 'com.reimaginebanking.api:nessie-android-sdk:1.0.2'
+    compile 'com.reimaginebanking.api:nessie-android-sdk:1.0.3'
 
     // Card.IO
     compile 'io.card:android-sdk:5.4.0'
